@@ -347,16 +347,18 @@
   background-color: #1f1f1f;
   color: #fff;
   overflow: hidden;
+  display: flex;
   position: relative;
   box-sizing: border-box;
 }
 
 .about__title {
+  max-width: 154px;
   margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
+  z-index: 3;
 }
 
 .about__content {
@@ -364,6 +366,8 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  margin: auto 120px;
+  z-index: 2;
 }
 
 .about__paragraph {
@@ -375,6 +379,10 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: 1;
 }
 
 .footer {
